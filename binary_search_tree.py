@@ -7,7 +7,6 @@ class Binary_search_tree():
 
     def insert(self,data):
         if data is None : return
-
         if self.key == None:
             self.key = data
             return
@@ -17,14 +16,12 @@ class Binary_search_tree():
                 self.rchild_.insert(data)
             else:
                 self.rchild_ = Binary_search_tree(data)
-            return
 
         elif self.key > data:
             if self._lchild:
                 self._lchild.insert(data)
             else:
                 self._lchild = Binary_search_tree(data)
-            return
 
     def search(self,data):
         if self.key == data:
@@ -43,13 +40,19 @@ class Binary_search_tree():
             else: 
                 print("node is not present")
     
-    def travelsal():
-            pass
+    def preorder_travelsal(self):
+        print(self.key)
+        if self._lchild:
+            self._lchild.preorder_traversal()
+        if self.rchild_:
+            self.rchild_.preorder_travelsal()
 
 list1 =[1,32,43,4,24,2,124,43,243,12,2423]
 bst = Binary_search_tree(43)
 for i in list1:
-    bst = Binary_search_tree(i)
+    bst.insert(i)
 
 bst = Binary_search_tree(10)
-bst.search(10)
+bst.search(4)
+print(".......................................................................")
+bst.preorder_travelsal()
