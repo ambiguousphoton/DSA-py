@@ -3,7 +3,7 @@ from queue import Queue
 counter = 1 
 graph = {}
 while True :
-    val = input("what is " + str(counter) +" st node ? :: ")
+    val = input("what is " + str(counter) + " st node ? :: ")
     if val == ".":
         break
     my_list = []
