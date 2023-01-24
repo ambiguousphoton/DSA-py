@@ -9,13 +9,12 @@ while True :
     my_list = []
     while True:
         child = input("child of "+ str(counter) +"node :: ")
-        if child  == ".":
-            
+        if child  == "."   
             break
         my_list.append(child)
     graph[val] = my_list
     counter += 1
-
+#jai shree ram
 s = input ("what is starting node ? :: ")
 visited = set()
 def dfs(visited, g, root):
