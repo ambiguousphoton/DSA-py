@@ -4,7 +4,7 @@ stack = collections.deque()
 stack.append(65)
 print (stack)
 print (not stack)
-stack.append(45)
+stack.append(4545)
 stack.append(63)
 print(stack[-1])
 
