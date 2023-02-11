@@ -1,4 +1,4 @@
-stack = [0]
+stack = []
 def push():
     inp = input("enter a number")
     stack.append(inp)
