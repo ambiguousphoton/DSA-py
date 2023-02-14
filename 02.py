@@ -6,7 +6,7 @@ print (stack)
 print (not stack)
 stack.append(4545)
 stack.append(63)
-print(stack[-1])
+print(stack[-5])
 
 import queue
 stack = queue.LifoQueue(3)
