@@ -2,7 +2,7 @@ def om():
     list=[5,3,4]
     list.append(99)
 
-    tuple = (1,2,3,4,5,6)
+    tuple = (1,2,3,4,5,6,7)
     print(type(tuple))
     return list
 ls = om()
