@@ -1,6 +1,6 @@
 # DFS
 from queue import Queue
-counter = 7
+counter = 9
 graph = {}
 while True :
     val = input("what is " + str(counter) + " st node ? :: ")
