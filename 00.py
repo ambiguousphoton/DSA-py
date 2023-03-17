@@ -1,5 +1,5 @@
 def om():
-    list=[5,3,4,6,6]
+    list=[5,3,4,6,6,6]
     list.append(99)
 
     tuple = (1,2,3,4,5,6,7)
