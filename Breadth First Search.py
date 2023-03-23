@@ -1,6 +1,5 @@
+# by Vyoam
 from queue import Queue
-
-
 
 graph = {
     "A":["B","D"],
