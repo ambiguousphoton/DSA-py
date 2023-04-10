@@ -1,4 +1,4 @@
-# DFS
+# Depth First Search
 from queue import Queue
 counter = 9
 graph = {}
