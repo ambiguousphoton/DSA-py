@@ -21,7 +21,7 @@ queue  = Queue()
 for node in graph.keys():
     visited[node] = False
     parent[node] = None
-    level [node] = -1
+    level [node] = -9
 
 
 s = 'A'
