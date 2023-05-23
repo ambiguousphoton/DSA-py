@@ -21,6 +21,6 @@ def loop():
         elif inp == "quit":
             break 
         else:
-            print("wrong input !")
+            print("wrong input !!!")
 
 loop()
