@@ -1,7 +1,7 @@
 import collections
 stack = collections.deque()
 
-stack.append(99945999)
+stack.append(9994599459)
 print (stack)
 print (not stack)
 stack.append(4545)
