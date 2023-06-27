@@ -1,41 +1,42 @@
-# arr = [34,53,35,23,53]
-# print(len(arr))
-# a = 34
-# print(a.ref)
+from timeit import default_timer as timer
+import random
 
-# for n in range(len(arr)):
-    
-# #     print(n ," ",arr[n])
+arr = [random.randint(0,1000) for i in range(10000000)]
+s = timer()
+arr.sort() # Nlog(n)
+e = timer()
+print(e - s)
 
-# arr = [[0, 0], [1, 5], [3, 0], [4, 0], [5, 0], [5, 5]]
-# a = [4,0]
-# if  a not in arr:
-#     arr.append(a)
-# # print(arr)
-# ab = 5
-# ba = ab 
-# ab+=1
-# print ( id (ab)," ",ab, " ",id(ba)," ",ba)
+# def linearSearch(arr,target): # O(N)
+#     i = 0
+#     while i < len(arr):
+#         if arr[i] == target:
+#             return i
+#         i += 1
+#     return -1 
 
-# a =[0,0,0]
-# print(len(a))
+# st = timer()
+# ls = linearSearch(arr,100)
+# ed = timer()
 
-# import stack
-# stack =  stack.stack()
-# stack.pop()
-# stack.push(1)
-# stack.push(2)
-# stack.show()
+# print("This is result of linear search",ls,"with time taken", st - ed)
 
-# class sayhi:
-#     def __english():
-#         print("hi")
+# def binarySearch(arr, target):
+#     l, r = 0, len(arr) - 1
+#     while l <= r:
+#         mid = (l + r) // 2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] > target:
+#             r = mid - 1 
+#         else:
+#             l = mid + 1
+#     return -1
 
-#     def english():
-#         print("hi!")
+# st2 = timer()
+# bs = binarySearch(arr, 100)
+# ed2 = timer()
+# print("This is binary search result",bs,"with time taken", st2 - ed2)
 
-# # sayhi.__english()
-# sayhi.english()  
-# import inspect
-# from queue import Queue
-# print(inspect.getsource(Queue))
+# print(   0.22   )
+# print(0.0000182 )
