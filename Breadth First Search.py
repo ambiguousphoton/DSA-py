@@ -41,6 +41,5 @@ while not queue.empty():
             queue.put(v)
 
 print (  "BFS OUTPUT :: " , " " , bfs_traversal_output)
-
 print ("PARENT RELATIONS :: ",parent)
 print ("LEVEL OF NODES :: ",level)
