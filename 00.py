@@ -37,3 +37,13 @@ what_are_sets()
 
 stack=[]
 stack.append(10)
+
+
+def find_missing_number(nums):
+    a = nums.copy()
+    a.sort()
+    for i in range(0, len(nums)+1):
+        if i != a[i]:
+            return i
+
+print(find_missing_number([9, 6, 4, 2, 3, 5, 1, 0]))
