@@ -21,7 +21,7 @@ def dictionary():
     print ( dictionary["hariom"])
     print(dictionary)
     del dictionary["bad"]
-    dictionary['jai_shree_ram'] =777
+    dictionary['jai_shree_ram !'] =777
     print(dictionary)
 
     
