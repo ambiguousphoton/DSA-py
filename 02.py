@@ -11,8 +11,7 @@ print(stack[-5])
 import queue
 stack = queue.LifoQueue(3)
 stack.put(9)
-stack.put(20)
 stack.put(30)
 
-stack.put(5)
+
 print(stack.get(timeout=1))
