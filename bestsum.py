@@ -1,3 +1,5 @@
+# Dynamic Programming approach
+
 def bestsum(target, nums, memory = None):
     if memory == None: memory = {}
     if target in memory: return memory[target]
